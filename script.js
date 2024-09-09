@@ -9,6 +9,13 @@ function addItem(event) {
 
   let newItem = itemInput.value;
 
+  // Check if the input is empty
+  if (newItem === "") {
+    itemInput.classList.add("error");
+    alert("Please enter an item.");
+    return;
+  }
+
   const li = document.createElement("li");
 
   li.appendChild(document.createTextNode(newItem));

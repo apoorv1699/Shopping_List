@@ -56,6 +56,13 @@ header h1 {
   transition: border-color 0.3s;
 }
 
+/* Error styling for the input field */
+.error {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+
 .form-input:focus,
 .form-input-filter:focus {
   outline: none;
