@@ -10,7 +10,7 @@ function addItem(event) {
   let newItem = itemInput.value;
 
   // Check if the input is empty
-  if (newItem === "") {
+  if (newItem.trim().length === 0) {
     itemInput.classList.add("error");
     alert("Please enter an item.");
     return;
